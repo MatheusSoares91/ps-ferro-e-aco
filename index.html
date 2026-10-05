@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PS Ferro e Aço - Orçamentos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans min-h-screen">
+
+  <!-- HEADER -->
+  <header class="bg-slate-800 border-b border-slate-700 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center gap-4">
+      <div>
+        <h1 class="text-2xl font-black tracking-wider text-amber-500">PS FERRO E AÇO</h1>
+        <p class="text-xs text-slate-400">Distribuidor de Aço & Soluções Metálicas</p>
+      </div>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="tel:21973075890" class="flex items-center gap-2 bg-slate-700 hover:bg-slate-600 px-3 py-2 rounded-lg transition">
+          <span>📞 (21) 97307-5890</span>
+        </a>
+        <a href="https://maps.google.com/?q=Estr.+da+Matriz,+1717+-+Guaratiba,+Rio+de+Janeiro+-+RJ" target="_blank" class="hidden sm:flex items-center gap-2 bg-slate-700 hover:bg-slate-600 px-3 py-2 rounded-lg transition">
+          <span>📍 Guaratiba - RJ</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-b from-slate-800 to-slate-900 py-10 border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <span class="bg-amber-500/10 text-amber-400 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider border border-amber-500/20">
+        Atendimento Direto & Cotação Rápida
+      </span>
+      <h2 class="text-3xl md:text-5xl font-extrabold mt-4 text-white">
+        Monte seu Orçamento de Aço <span class="text-amber-500">Online</span>
+      </h2>
+      <p class="mt-3 text-slate-400 max-w-2xl mx-auto text-sm">
+        Selecione as peças desejadas e receba o valor oficial diretamente no atendimento via WhatsApp.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+    
+    <!-- CATÁLOGO -->
+    <div class="lg:col-span-2 space-y-4">
+      <h3 class="text-xl font-bold text-white">🧮 Catálogo de Produtos</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden p-4 flex flex-col justify-between">
+          <div>
+            <h4 class="font-bold text-lg text-white">Perfil U / Perfil Enrijecido</h4>
+            <p class="text-xs text-slate-400 mt-1">Ideal para estruturas metálicas, terças de galpão e portões.</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-700/50 flex justify-between items-center">
+            <span class="text-sm font-bold text-amber-400">Barra (6m)</span>
+            <button onclick="adicionarItem('Perfil U / Perfil Enrijecido')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-3 py-2 rounded-lg text-sm transition">+ Adicionar</button>
+          </div>
+        </div>
+
+        <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden p-4 flex flex-col justify-between">
+          <div>
+            <h4 class="font-bold text-lg text-white">Tubo Quadrado / Metalon</h4>
+            <p class="text-xs text-slate-400 mt-1">Diversas bitolas e espessuras para serralheria geral.</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-700/50 flex justify-between items-center">
+            <span class="text-sm font-bold text-amber-400">Barra (6m)</span>
+            <button onclick="adicionarItem('Tubo Quadrado / Metalon')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-3 py-2 rounded-lg text-sm transition">+ Adicionar</button>
+          </div>
+        </div>
+
+        <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden p-4 flex flex-col justify-between">
+          <div>
+            <h4 class="font-bold text-lg text-white">Chapa de Aço Fina / Grossa</h4>
+            <p class="text-xs text-slate-400 mt-1">Corte e dobra sob medida ou chapas inteiras.</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-700/50 flex justify-between items-center">
+            <span class="text-sm font-bold text-amber-400">Unidade</span>
+            <button onclick="adicionarItem('Chapa de Aço Fina / Grossa')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-3 py-2 rounded-lg text-sm transition">+ Adicionar</button>
+          </div>
+        </div>
+
+        <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden p-4 flex flex-col justify-between">
+          <div>
+            <h4 class="font-bold text-lg text-white">Viga I / Viga U / Viga H</h4>
+            <p class="text-xs text-slate-400 mt-1">Alta resistência para sustentação e grandes obras.</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-700/50 flex justify-between items-center">
+            <span class="text-sm font-bold text-amber-400">Metro</span>
+            <button onclick="adicionarItem('Viga I / Viga U / Viga H')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-3 py-2 rounded-lg text-sm transition">+ Adicionar</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FORMULÁRIO DE COTAÇÃO -->
+    <div class="bg-slate-800 border border-slate-700 rounded-xl p-6 h-fit sticky top-24">
+      <h3 class="text-xl font-bold text-white mb-4">🛒 Solicitar Cotação</h3>
+      
+      <div id="lista-itens" class="space-y-2 mb-4 text-sm text-slate-300">
+        <p class="text-slate-500 text-xs italic">Nenhum item selecionado ainda.</p>
+      </div>
+
+      <div class="space-y-3 pt-2 border-t border-slate-700">
+        <div>
+          <label class="text-xs text-slate-400 block mb-1">Seu Nome / Empresa *</label>
+          <input id="nome" type="text" placeholder="Ex: João Serralheria" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+        </div>
+        <div>
+          <label class="text-xs text-slate-400 block mb-1">Seu Bairro / Cidade</label>
+          <input id="bairro" type="text" placeholder="Ex: Guaratiba, Campo Grande..." class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+        </div>
+        <div>
+          <label class="text-xs text-slate-400 block mb-1">Como prefere receber?</label>
+          <select id="opcao" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+            <option value="Consultar se entregam na minha região">Consultar se entregam na minha região</option>
+            <option value="Vou retirar no balcão da loja">Vou retirar no balcão da loja</option>
+          </select>
+        </div>
+        <div>
+          <label class="text-xs text-slate-400 block mb-1">Medidas ou detalhes</label>
+          <textarea id="obs" placeholder="Ex: Preciso de cortes específicos..." class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-amber-500 h-16 resize-none"></textarea>
+        </div>
+
+        <button onclick="enviarWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition shadow-lg">
+          💬 Enviar Cotação para o WhatsApp
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-slate-800 py-8 mt-12 text-slate-400 text-sm">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h4 class="font-bold text-white mb-1">PS FERRO E AÇO</h4>
+      <p class="text-xs">Estr. da Matriz, 1717 - Guaratiba, Rio de Janeiro - RJ, 23026-000</p>
+    </div>
+  </footer>
+
+  <script>
+    let carrinho = [];
+
+    function adicionarItem(nome) {
+      carrinho.push(nome);
+      atualizarTela();
+    }
+
+    function atualizarTela() {
+      const container = document.getElementById('lista-itens');
+      if (carrinho.length === 0) {
+        container.innerHTML = '<p class="text-slate-500 text-xs italic">Nenhum item selecionado ainda.</p>';
+        return;
+      }
+      container.innerHTML = carrinho.map((item, index) => 
+        `<div class="flex justify-between items-center bg-slate-900 p-2 rounded text-xs">
+          <span>• ${item}</span>
+          <button onclick="removerItem(${index})" class="text-red-400 hover:text-red-300 font-bold ml-2">X</button>
+        </div>`
+      ).join('');
+    }
+
+    function removerItem(index) {
+      carrinho.splice(index, 1);
+      atualizarTela();
+    }
+
+    function enviarWhatsApp() {
+      const nome = document.getElementById('nome').value;
+      const bairro = document.getElementById('bairro').value;
+      const opcao = document.getElementById('opcao').value;
+      const obs = document.getElementById('obs').value;
+
+      if (!nome) return alert('Por favor, digite seu nome!');
+      if (carrinho.length === 0) return alert('Selecione pelo menos um produto!');
+
+      let texto = `*SOLICITAÇÃO DE ORÇAMENTO - PS FERRO E AÇO*\n\n`;
+      texto += `👤 *Cliente:* ${nome}\n`;
+      texto += `📍 *Bairro/Região:* ${bairro || 'Não informado'}\n`;
+      texto += `🚚 *Preferencia:* ${opcao}\n`;
+      if (obs) texto += `📝 *Obs/Medidas:* ${obs}\n`;
+      texto += `\n*ITENS SOLICITADOS:*\n`;
+      carrinho.forEach(item => texto += `• ${item}\n`);
+      texto += `\n_Aguardando cotação de valores._`;
+
+      const numeroZap = '5521973075890';
+      window.open(`https://wa.me/${numeroZap}?text=${encodeURIComponent(texto)}`, '_blank');
+    }
+  </script>
+</body>
+</html>
