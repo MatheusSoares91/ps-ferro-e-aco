@@ -218,7 +218,7 @@
         </button>
 
         <p class="text-[10px] text-center text-slate-500 leading-tight">
-          📍 Retirada no balcão da loja após a confirmação das peças.
+          📍 Retirada no balcão da loja em Guaratiba ou a combinar entrega.
         </p>
       </div>
     </div>
@@ -313,7 +313,7 @@
       if (obs) texto += `📝 *Especificações/Medidas:* ${obs}\n`;
       texto += `\n*ITENS SELECIONADOS:*\n`;
       carrinho.forEach(item => texto += `• ${item}\n`);
-      texto += `\n📍 _Cliente ciente da retirada no balcão da loja em Guaratiba._`;
+      texto += `\n📍 _Retirada no balcão em Guaratiba (ou consultar frete/entrega com a loja)._`;
 
       const numeroZap = '5521973075890';
       window.open(`https://wa.me/${numeroZap}?text=${encodeURIComponent(texto)}`, '_blank');
