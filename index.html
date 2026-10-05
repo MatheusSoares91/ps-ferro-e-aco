@@ -15,7 +15,7 @@
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen antialiased selection:bg-amber-500 selection:text-slate-950">
 
-  <!-- TOP BAR / AVISO DE ATENDIMENTO -->
+  <!-- BARRA SUPERIOR DE AVISO -->
   <div class="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-slate-950 font-bold text-xs py-2 px-4 text-center tracking-wide">
     ⚡ ATENDIMENTO RÁPIDO & ORÇAMENTOS DIRETO NO BALCÃO EM GUARATIBA - RJ
   </div>
@@ -57,13 +57,12 @@
         Atendimento Presencial e Online Ativo
       </div>
       <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-none">
-        Sua Solução em <span class="bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 bg-clip-text text-transparent">Ferro e Aço</span> no Rio de Janeiro
+        Sua Solução em <span class="bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 bg-clip-text text-transparent">Ferro e Aço</span> no RJ
       </h2>
       <p class="mt-5 text-slate-400 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-        Monte seu orçamento escolhendo os produtos do nosso catálogo abaixo e receba a cotação pronta no WhatsApp.
+        Selecione os produtos necessários no catálogo abaixo e envie seu orçamento direto para o nosso WhatsApp com um clique.
       </p>
 
-      <!-- DESTAQUES RAPIDOS -->
       <div class="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 max-w-3xl mx-auto mt-8 text-left">
         <div class="bg-slate-900/60 border border-slate-800/80 backdrop-blur p-3.5 sm:p-4 rounded-2xl flex items-center gap-3">
           <div class="p-2 sm:p-2.5 bg-amber-500/10 rounded-xl text-amber-400 font-bold text-sm">⭐ 5.0</div>
@@ -83,7 +82,7 @@
           <div class="p-2 sm:p-2.5 bg-amber-500/10 rounded-xl text-amber-400 font-bold text-sm">💬</div>
           <div>
             <p class="text-xs font-bold text-white">Orçamento Rápido</p>
-            <p class="text-[10px] sm:text-[11px] text-slate-400">Resposta via WhatsApp</p>
+            <p class="text-[10px] sm:text-[11px] text-slate-400">Resposta imediata</p>
           </div>
         </div>
       </div>
@@ -93,27 +92,27 @@
   <!-- CATÁLOGO E CARRINHO -->
   <main id="orcamento" class="max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:py-16 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
     
-    <!-- CATALOGO -->
+    <!-- CATALOGO DE PRODUTOS -->
     <div class="lg:col-span-2 space-y-6">
       <div class="flex items-center justify-between">
         <div>
-          <h3 class="text-xl sm:text-2xl font-black text-white">Nosso Catálogo</h3>
-          <p class="text-xs text-slate-400">Clique em "+ Adicionar ao Orçamento" nos itens que deseja</p>
+          <h3 class="text-xl sm:text-2xl font-black text-white">Catálogo de Produtos</h3>
+          <p class="text-xs text-slate-400">Adicione os itens desejados para gerar a cotação</p>
         </div>
       </div>
 
-      <!-- GRID DE PRODUTOS -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         
         <!-- PRODUTO 1: THINNER -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between">
           <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/6474132/pexels-photo-6474132.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Thinner" class="w-full h-full object-cover">
+            <div class="w-14 h-14 bg-slate-800/80 rounded-xl flex items-center justify-center shrink-0 border border-slate-700 text-amber-400 font-bold text-xl">
+              🧪
             </div>
             <div>
-              <h4 class="font-bold text-sm text-white">Thinner</h4>
-              <p class="text-xs text-slate-400 mt-0.5">Solvente para limpeza e diluição</p>
+              <span class="text-[10px] bg-amber-500/10 text-amber-400 px-2 py-0.5 rounded font-bold uppercase">Químicos</span>
+              <h4 class="font-bold text-sm text-white mt-1">Thinner</h4>
+              <p class="text-xs text-slate-400">Para limpeza e diluição de tintas</p>
             </div>
           </div>
           <button onclick="adicionarItem('Thinner')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
@@ -122,14 +121,15 @@
         </div>
 
         <!-- PRODUTO 2: REDONDO MACIÇO -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between">
           <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Redondo maciço" class="w-full h-full object-cover">
+            <div class="w-14 h-14 bg-slate-800/80 rounded-xl flex items-center justify-center shrink-0 border border-slate-700 text-amber-400 font-bold text-xl">
+              🔘
             </div>
             <div>
-              <h4 class="font-bold text-sm text-white">Redondo Maciço</h4>
-              <p class="text-xs text-amber-400 font-semibold mt-0.5">Medidas: 1/4 | 5/16 | 3/8 | 1/2</p>
+              <span class="text-[10px] bg-amber-500/10 text-amber-400 px-2 py-0.5 rounded font-bold uppercase">Barras</span>
+              <h4 class="font-bold text-sm text-white mt-1">Redondo Maciço</h4>
+              <p class="text-xs text-amber-400 font-semibold">Medidas: 1/4 | 5/16 | 3/8 | 1/2</p>
             </div>
           </div>
           <button onclick="adicionarItem('Redondo Maciço (1/4 | 5/16 | 3/8 | 1/2)')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
@@ -138,14 +138,15 @@
         </div>
 
         <!-- PRODUTO 3: CANTONEIRAS -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between">
           <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Cantoneiras" class="w-full h-full object-cover">
+            <div class="w-14 h-14 bg-slate-800/80 rounded-xl flex items-center justify-center shrink-0 border border-slate-700 text-amber-400 font-bold text-xl">
+              📐
             </div>
             <div>
-              <h4 class="font-bold text-sm text-white">Cantoneiras</h4>
-              <p class="text-xs text-amber-400 font-semibold mt-0.5">Medidas: 1/2 até 2"</p>
+              <span class="text-[10px] bg-amber-500/10 text-amber-400 px-2 py-0.5 rounded font-bold uppercase">Perfis</span>
+              <h4 class="font-bold text-sm text-white mt-1">Cantoneiras</h4>
+              <p class="text-xs text-amber-400 font-semibold">Medidas: 1/2" até 2"</p>
             </div>
           </div>
           <button onclick="adicionarItem('Cantoneiras (1/2 até 2&quot;)')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
@@ -154,14 +155,15 @@
         </div>
 
         <!-- PRODUTO 4: ZARCÃO -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between">
           <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/1669754/pexels-photo-1669754.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Zarcão" class="w-full h-full object-cover">
+            <div class="w-14 h-14 bg-slate-800/80 rounded-xl flex items-center justify-center shrink-0 border border-slate-700 text-amber-400 font-bold text-xl">
+              🎨
             </div>
             <div>
-              <h4 class="font-bold text-sm text-white">Zarcão</h4>
-              <p class="text-xs text-amber-400 font-semibold mt-0.5">Disponível em 1/4 e 3,6L</p>
+              <span class="text-[10px] bg-amber-500/10 text-amber-400 px-2 py-0.5 rounded font-bold uppercase">Pintura e Proteção</span>
+              <h4 class="font-bold text-sm text-white mt-1">Zarcão Anticorrosivo</h4>
+              <p class="text-xs text-amber-400 font-semibold">Opções: Galão 1/4 ou 3,6L</p>
             </div>
           </div>
           <button onclick="adicionarItem('Zarcão (1/4 ou 3,6L)')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
@@ -170,14 +172,15 @@
         </div>
 
         <!-- PRODUTO 5: METALON GALVANIZADO 20x20x20 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between">
           <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Metalon Galvanizado 20x20x20" class="w-full h-full object-cover">
+            <div class="w-14 h-14 bg-slate-800/80 rounded-xl flex items-center justify-center shrink-0 border border-slate-700 text-amber-400 font-bold text-xl">
+              🔳
             </div>
             <div>
-              <h4 class="font-bold text-sm text-white">Metalon Galvanizado 20x20x20</h4>
-              <p class="text-xs text-slate-400 mt-0.5">Perfil tubular com proteção anticorrosiva</p>
+              <span class="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded font-bold uppercase">Galvanizado</span>
+              <h4 class="font-bold text-sm text-white mt-1">Metalon 20x20x20</h4>
+              <p class="text-xs text-slate-400">Perfil quadrado leve com proteção</p>
             </div>
           </div>
           <button onclick="adicionarItem('Metalon galvanizado 20x20x20')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
@@ -186,14 +189,15 @@
         </div>
 
         <!-- PRODUTO 6: METALON PRETO 50x30x18 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between">
           <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/1082582/pexels-photo-1082582.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Metalon Preto 50x30x18" class="w-full h-full object-cover">
+            <div class="w-14 h-14 bg-slate-800/80 rounded-xl flex items-center justify-center shrink-0 border border-slate-700 text-amber-400 font-bold text-xl">
+              ⬛
             </div>
             <div>
-              <h4 class="font-bold text-sm text-white">Metalon Preto 50x30x18</h4>
-              <p class="text-xs text-slate-400 mt-0.5">Estrutura de aço carbono para serralheria</p>
+              <span class="text-[10px] bg-slate-700 text-slate-300 px-2 py-0.5 rounded font-bold uppercase">Aço Carbono</span>
+              <h4 class="font-bold text-sm text-white mt-1">Metalon Preto 50x30x18</h4>
+              <p class="text-xs text-slate-400">Tubo retangular estrutural</p>
             </div>
           </div>
           <button onclick="adicionarItem('Metalon preto 50x30x18')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
@@ -202,14 +206,15 @@
         </div>
 
         <!-- PRODUTO 7: METALON GALVANIZADO 30x20x18 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between">
           <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Metalon Galvanizado 30x20x18" class="w-full h-full object-cover">
+            <div class="w-14 h-14 bg-slate-800/80 rounded-xl flex items-center justify-center shrink-0 border border-slate-700 text-amber-400 font-bold text-xl">
+              🔳
             </div>
             <div>
-              <h4 class="font-bold text-sm text-white">Metalon Galvanizado 30x20x18</h4>
-              <p class="text-xs text-slate-400 mt-0.5">Tubo retangular galvanizado resistente</p>
+              <span class="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded font-bold uppercase">Galvanizado</span>
+              <h4 class="font-bold text-sm text-white mt-1">Metalon 30x20x18</h4>
+              <p class="text-xs text-slate-400">Tubo retangular médio resistente</p>
             </div>
           </div>
           <button onclick="adicionarItem('Metalon galvanizado 30x20x18')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
@@ -218,14 +223,15 @@
         </div>
 
         <!-- PRODUTO 8: METALON GALVANIZADO 50x30x18 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between">
           <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Metalon Galvanizado 50x30x18" class="w-full h-full object-cover">
+            <div class="w-14 h-14 bg-slate-800/80 rounded-xl flex items-center justify-center shrink-0 border border-slate-700 text-amber-400 font-bold text-xl">
+              🔳
             </div>
             <div>
-              <h4 class="font-bold text-sm text-white">Metalon Galvanizado 50x30x18</h4>
-              <p class="text-xs text-slate-400 mt-0.5">Tubo reforçado para portões e estruturas</p>
+              <span class="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded font-bold uppercase">Galvanizado</span>
+              <h4 class="font-bold text-sm text-white mt-1">Metalon 50x30x18</h4>
+              <p class="text-xs text-slate-400">Para portões, grades e estruturas</p>
             </div>
           </div>
           <button onclick="adicionarItem('Metalon galvanizado 50x30x18')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
@@ -234,14 +240,15 @@
         </div>
 
         <!-- PRODUTO 9: TUBO GALVANIZADO 2 1/2x18 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between">
           <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Tubo Galvanizado 2 1/2x18" class="w-full h-full object-cover">
+            <div class="w-14 h-14 bg-slate-800/80 rounded-xl flex items-center justify-center shrink-0 border border-slate-700 text-amber-400 font-bold text-xl">
+              ⭕
             </div>
             <div>
-              <h4 class="font-bold text-sm text-white">Tubo Galvanizado 2 1/2x18</h4>
-              <p class="text-xs text-slate-400 mt-0.5">Tubo redondo galvanizado reforçado</p>
+              <span class="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded font-bold uppercase">Tubos Redondos</span>
+              <h4 class="font-bold text-sm text-white mt-1">Tubo Galvanizado 2 1/2x18</h4>
+              <p class="text-xs text-slate-400">Tubo redondo reforçado</p>
             </div>
           </div>
           <button onclick="adicionarItem('Tubo galvanizado 2 1/2x18')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
@@ -250,14 +257,15 @@
         </div>
 
         <!-- PRODUTO 10: FERRO U PORTA DE ENROLAR -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between">
           <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Ferro U porta de enrolar" class="w-full h-full object-cover">
+            <div class="w-14 h-14 bg-slate-800/80 rounded-xl flex items-center justify-center shrink-0 border border-slate-700 text-amber-400 font-bold text-xl">
+              🚪
             </div>
             <div>
-              <h4 class="font-bold text-sm text-white">Ferro U Porta de Enrolar Galvanizado</h4>
-              <p class="text-xs text-slate-400 mt-0.5">Guia lateral e perfil de elevação</p>
+              <span class="text-[10px] bg-amber-500/10 text-amber-400 px-2 py-0.5 rounded font-bold uppercase">Especialidade</span>
+              <h4 class="font-bold text-sm text-white mt-1">Ferro U Porta de Enrolar</h4>
+              <p class="text-xs text-slate-400">Guia galvanizada lateral</p>
             </div>
           </div>
           <button onclick="adicionarItem('Ferro U porta de enrolar galvanizado')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
@@ -266,14 +274,15 @@
         </div>
 
         <!-- PRODUTO 11: TUBO GALVANIZADO 3/4x16 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between">
           <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Tubo Galvanizado 3/4x16" class="w-full h-full object-cover">
+            <div class="w-14 h-14 bg-slate-800/80 rounded-xl flex items-center justify-center shrink-0 border border-slate-700 text-amber-400 font-bold text-xl">
+              ⭕
             </div>
             <div>
-              <h4 class="font-bold text-sm text-white">Tubo Galvanizado 3/4x16</h4>
-              <p class="text-xs text-slate-400 mt-0.5">Tubo redondo leve anticorrosivo</p>
+              <span class="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded font-bold uppercase">Tubos Redondos</span>
+              <h4 class="font-bold text-sm text-white mt-1">Tubo Galvanizado 3/4x16</h4>
+              <p class="text-xs text-slate-400">Tubo industrial de alta durabilidade</p>
             </div>
           </div>
           <button onclick="adicionarItem('Tubo galvanizado 3/4x16')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
@@ -281,14 +290,14 @@
           </button>
         </div>
 
-        <!-- CARD OUTROS PRODUTOS -->
-        <div class="bg-gradient-to-br from-slate-900 to-slate-900/90 border border-amber-500/30 rounded-2xl p-5 hover:border-amber-500 transition flex flex-col justify-between sm:col-span-2 relative overflow-hidden group">
-          <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-amber-500/5 rounded-full blur-2xl group-hover:bg-amber-500/10 transition"></div>
+        <!-- OUTROS PRODUTOS / MEDIDAS -->
+        <div class="bg-gradient-to-br from-slate-900 to-slate-900/90 border border-amber-500/30 rounded-2xl p-5 hover:border-amber-500 transition flex flex-col justify-between sm:col-span-2">
           <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div>
-              <h4 class="font-bold text-base text-white">Outros produtos / Medidas Especiais</h4>
-              <p class="text-xs text-slate-400 mt-1 leading-relaxed max-w-xl">
-                Não encontrou o item que procura acima? Adicione esta opção e especifique a bitola, quantidade ou produto nas observações ao lado.
+              <span class="text-[10px] bg-amber-500/20 text-amber-300 px-2.5 py-1 rounded-full font-bold uppercase">Sob Encomenda</span>
+              <h4 class="font-bold text-base text-white mt-2">Outras Medidas ou Produtos Especiais</h4>
+              <p class="text-xs text-slate-400 mt-1">
+                Precisa de vigas, chapas ou medidas específicas? Adicione este item e descreva nas observações.
               </p>
             </div>
             <button onclick="adicionarItem('Outros produtos (especificado nas observações)')" class="w-full sm:w-auto whitespace-nowrap bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold px-5 py-3 rounded-xl text-xs transition border border-amber-500/20">
@@ -309,7 +318,7 @@
         <span id="qtd-itens" class="bg-amber-500/10 text-amber-400 text-xs font-bold px-2.5 py-1 rounded-full border border-amber-500/20">0 itens</span>
       </div>
       
-      <!-- LISTA DINÂMICA -->
+      <!-- LISTA DINÂMICA DE ITENS -->
       <div id="lista-itens" class="space-y-2 mb-6 max-h-56 overflow-y-auto pr-1">
         <div class="text-center py-8 text-slate-500 border border-dashed border-slate-800 rounded-xl">
           <p class="text-xs">Sua lista está vazia.</p>
@@ -320,22 +329,22 @@
       <!-- FORMULÁRIO -->
       <div class="space-y-4 pt-4 border-t border-slate-800">
         <div>
-          <label class="text-xs font-semibold text-slate-300 block mb-1.5">Seu Nome / Nome da Empresa *</label>
+          <label class="text-xs font-semibold text-slate-300 block mb-1.5">Seu Nome / Empresa *</label>
           <input id="nome" type="text" placeholder="Ex: Carlos Serralheria" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-amber-500 transition">
         </div>
 
         <div>
-          <label class="text-xs font-semibold text-slate-300 block mb-1.5">Especificações, Quantidade ou Outros Itens</label>
-          <textarea id="obs" placeholder="Ex: Preciso de 4 barras de metalon e também 2 latas de zarcão..." class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-amber-500 h-20 resize-none transition"></textarea>
+          <label class="text-xs font-semibold text-slate-300 block mb-1.5">Quantidade / Detalhes</label>
+          <textarea id="obs" placeholder="Ex: Preciso de 5 barras de metalon 50x30x18 e 1 galão de zarcão..." class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-amber-500 h-20 resize-none transition"></textarea>
         </div>
 
         <button onclick="enviarWhatsApp()" class="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition text-xs shadow-lg shadow-emerald-950">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-          Enviar Cotação pelo WhatsApp
+          Enviar Orçamento pelo WhatsApp
         </button>
 
         <p class="text-[10px] text-center text-slate-500 leading-tight">
-          📍 Retirada no balcão da loja em Guaratiba ou a combinar entrega.
+          📍 Atendimento rápido no balcão da loja em Guaratiba.
         </p>
       </div>
     </div>
@@ -352,7 +361,6 @@
         <p class="text-xs text-slate-400 mt-2">Estrada da Matriz, 1717 - Guaratiba, Rio de Janeiro - RJ, 23026-000</p>
       </div>
 
-      <!-- MAPA EMBUTIDO -->
       <div class="w-full h-80 sm:h-96 rounded-2xl overflow-hidden border border-slate-800 shadow-2xl relative">
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.238476839352!2d-43.6068224!3d-22.9782503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c017bcbe60737%3A0x88d52aa29eecc87c!2sEstr.%20da%20Matriz%2C%201717%20-%20Guaratiba%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2023026-000!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
@@ -427,449 +435,10 @@
 
       let texto = `*SOLICITAÇÃO DE COTAÇÃO - PS FERRO E AÇO*\n\n`;
       texto += `👤 *Cliente:* ${nome}\n`;
-      if (obs) texto += `📝 *Especificações/Medidas:* ${obs}\n`;
+      if (obs) texto += `📝 *Especificações/Quantidades:* ${obs}\n`;
       texto += `\n*ITENS SELECIONADOS:*\n`;
       carrinho.forEach(item => texto += `• ${item}\n`);
-      texto += `\n📍 _Retirada no balcão em Guaratiba (ou consultar frete/entrega com a loja)._`;
-
-      const numeroZap = '5521973075890';
-      window.open(`https://wa.me/${numeroZap}?text=${encodeURIComponent(texto)}`, '_blank');
-    }
-  </script>
-</body>
-</html><!DOCTYPE html>
-<html lang="pt-BR" class="dark scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PS Ferro e Aço - Distribuidor de Aço e Soluções Metálicas</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    .bg-grid { background-image: radial-gradient(rgba(245, 158, 11, 0.12) 1px, transparent 1px); background-size: 24px 24px; }
-  </style>
-</head>
-<body class="bg-slate-950 text-slate-100 min-h-screen antialiased selection:bg-amber-500 selection:text-slate-950">
-
-  <!-- TOP BAR / AVISO DE ATENDIMENTO -->
-  <div class="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-slate-950 font-bold text-xs py-2 px-4 text-center tracking-wide">
-    ⚡ ATENDIMENTO RÁPIDO & ORÇAMENTOS DIRETO NO BALCÃO EM GUARATIBA - RJ
-  </div>
-
-  <!-- HEADER -->
-  <header class="bg-slate-900/80 backdrop-blur-md border-b border-slate-800/80 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-wrap justify-between items-center gap-4">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 bg-amber-500 rounded-xl flex items-center justify-center font-black text-slate-950 text-xl shadow-lg shadow-amber-500/20">
-          PS
-        </div>
-        <div>
-          <h1 class="text-xl font-extrabold tracking-tight text-white flex items-center gap-2">
-            PS FERRO E AÇO
-            <span class="text-[10px] bg-slate-800 text-amber-400 border border-amber-500/30 px-2 py-0.5 rounded-full uppercase font-bold">Oficial</span>
-          </h1>
-          <p class="text-xs text-slate-400">Distribuidor de Aço & Serralheria</p>
-        </div>
-      </div>
-
-      <div class="flex items-center gap-3">
-        <a href="tel:21973075890" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-4 py-2 rounded-xl transition text-xs font-semibold">
-          <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-          <span class="hidden sm:inline">(21) 97307-5890</span>
-        </a>
-        <a href="#orcamento" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs transition shadow-lg shadow-amber-500/10">
-          Fazer Cotação
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <!-- HERO SECTION -->
-  <section class="relative bg-grid py-12 lg:py-20 border-b border-slate-800 overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-b from-slate-950/0 via-slate-950/80 to-slate-950"></div>
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10">
-      <div class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold px-4 py-1.5 rounded-full mb-6">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        Atendimento Presencial e Online Ativo
-      </div>
-      <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-none">
-        Sua Solução em <span class="bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 bg-clip-text text-transparent">Ferro e Aço</span> no Rio de Janeiro
-      </h2>
-      <p class="mt-5 text-slate-400 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-        Monte seu orçamento escolhendo os produtos do nosso catálogo abaixo e receba a cotação pronta no WhatsApp.
-      </p>
-
-      <!-- DESTAQUES RAPIDOS -->
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 max-w-3xl mx-auto mt-8 text-left">
-        <div class="bg-slate-900/60 border border-slate-800/80 backdrop-blur p-3.5 sm:p-4 rounded-2xl flex items-center gap-3">
-          <div class="p-2 sm:p-2.5 bg-amber-500/10 rounded-xl text-amber-400 font-bold text-sm">⭐ 5.0</div>
-          <div>
-            <p class="text-xs font-bold text-white">Excelente Qualidade</p>
-            <p class="text-[10px] sm:text-[11px] text-slate-400">Materiais certificados</p>
-          </div>
-        </div>
-        <div class="bg-slate-900/60 border border-slate-800/80 backdrop-blur p-3.5 sm:p-4 rounded-2xl flex items-center gap-3">
-          <div class="p-2 sm:p-2.5 bg-amber-500/10 rounded-xl text-amber-400 font-bold text-sm">🏬</div>
-          <div>
-            <p class="text-xs font-bold text-white">Retirada no Balcão</p>
-            <p class="text-[10px] sm:text-[11px] text-slate-400">Estr. da Matriz, Guaratiba</p>
-          </div>
-        </div>
-        <div class="bg-slate-900/60 border border-slate-800/80 backdrop-blur p-3.5 sm:p-4 rounded-2xl col-span-2 md:col-span-1 flex items-center gap-3">
-          <div class="p-2 sm:p-2.5 bg-amber-500/10 rounded-xl text-amber-400 font-bold text-sm">💬</div>
-          <div>
-            <p class="text-xs font-bold text-white">Orçamento Rápido</p>
-            <p class="text-[10px] sm:text-[11px] text-slate-400">Resposta via WhatsApp</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CATÁLOGO E CARRINHO -->
-  <main id="orcamento" class="max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:py-16 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
-    
-    <!-- CATALOGO -->
-    <div class="lg:col-span-2 space-y-6">
-      <div class="flex items-center justify-between">
-        <div>
-          <h3 class="text-xl sm:text-2xl font-black text-white">Nosso Catálogo</h3>
-          <p class="text-xs text-slate-400">Clique em "+ Adicionar ao Orçamento" nos itens que deseja</p>
-        </div>
-      </div>
-
-      <!-- GRID DE PRODUTOS -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        
-        <!-- PRODUTO 1: THINNER -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
-          <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/6474132/pexels-photo-6474132.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Thinner" class="w-full h-full object-cover">
-            </div>
-            <div>
-              <h4 class="font-bold text-sm text-white">Thinner</h4>
-              <p class="text-xs text-slate-400 mt-0.5">Solvente para limpeza e diluição</p>
-            </div>
-          </div>
-          <button onclick="adicionarItem('Thinner')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
-            + Adicionar ao Orçamento
-          </button>
-        </div>
-
-        <!-- PRODUTO 2: REDONDO MACIÇO -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
-          <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Redondo maciço" class="w-full h-full object-cover">
-            </div>
-            <div>
-              <h4 class="font-bold text-sm text-white">Redondo Maciço</h4>
-              <p class="text-xs text-amber-400 font-semibold mt-0.5">Medidas: 1/4 | 5/16 | 3/8 | 1/2</p>
-            </div>
-          </div>
-          <button onclick="adicionarItem('Redondo Maciço (1/4 | 5/16 | 3/8 | 1/2)')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
-            + Adicionar ao Orçamento
-          </button>
-        </div>
-
-        <!-- PRODUTO 3: CANTONEIRAS -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
-          <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Cantoneiras" class="w-full h-full object-cover">
-            </div>
-            <div>
-              <h4 class="font-bold text-sm text-white">Cantoneiras</h4>
-              <p class="text-xs text-amber-400 font-semibold mt-0.5">Medidas: 1/2 até 2"</p>
-            </div>
-          </div>
-          <button onclick="adicionarItem('Cantoneiras (1/2 até 2&quot;)')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
-            + Adicionar ao Orçamento
-          </button>
-        </div>
-
-        <!-- PRODUTO 4: ZARCÃO -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
-          <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/1669754/pexels-photo-1669754.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Zarcão" class="w-full h-full object-cover">
-            </div>
-            <div>
-              <h4 class="font-bold text-sm text-white">Zarcão</h4>
-              <p class="text-xs text-amber-400 font-semibold mt-0.5">Disponível em 1/4 e 3,6L</p>
-            </div>
-          </div>
-          <button onclick="adicionarItem('Zarcão (1/4 ou 3,6L)')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
-            + Adicionar ao Orçamento
-          </button>
-        </div>
-
-        <!-- PRODUTO 5: METALON GALVANIZADO 20x20x20 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
-          <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Metalon Galvanizado 20x20x20" class="w-full h-full object-cover">
-            </div>
-            <div>
-              <h4 class="font-bold text-sm text-white">Metalon Galvanizado 20x20x20</h4>
-              <p class="text-xs text-slate-400 mt-0.5">Perfil tubular com proteção anticorrosiva</p>
-            </div>
-          </div>
-          <button onclick="adicionarItem('Metalon galvanizado 20x20x20')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
-            + Adicionar ao Orçamento
-          </button>
-        </div>
-
-        <!-- PRODUTO 6: METALON PRETO 50x30x18 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
-          <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/1082582/pexels-photo-1082582.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Metalon Preto 50x30x18" class="w-full h-full object-cover">
-            </div>
-            <div>
-              <h4 class="font-bold text-sm text-white">Metalon Preto 50x30x18</h4>
-              <p class="text-xs text-slate-400 mt-0.5">Estrutura de aço carbono para serralheria</p>
-            </div>
-          </div>
-          <button onclick="adicionarItem('Metalon preto 50x30x18')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
-            + Adicionar ao Orçamento
-          </button>
-        </div>
-
-        <!-- PRODUTO 7: METALON GALVANIZADO 30x20x18 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
-          <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Metalon Galvanizado 30x20x18" class="w-full h-full object-cover">
-            </div>
-            <div>
-              <h4 class="font-bold text-sm text-white">Metalon Galvanizado 30x20x18</h4>
-              <p class="text-xs text-slate-400 mt-0.5">Tubo retangular galvanizado resistente</p>
-            </div>
-          </div>
-          <button onclick="adicionarItem('Metalon galvanizado 30x20x18')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
-            + Adicionar ao Orçamento
-          </button>
-        </div>
-
-        <!-- PRODUTO 8: METALON GALVANIZADO 50x30x18 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
-          <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Metalon Galvanizado 50x30x18" class="w-full h-full object-cover">
-            </div>
-            <div>
-              <h4 class="font-bold text-sm text-white">Metalon Galvanizado 50x30x18</h4>
-              <p class="text-xs text-slate-400 mt-0.5">Tubo reforçado para portões e estruturas</p>
-            </div>
-          </div>
-          <button onclick="adicionarItem('Metalon galvanizado 50x30x18')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
-            + Adicionar ao Orçamento
-          </button>
-        </div>
-
-        <!-- PRODUTO 9: TUBO GALVANIZADO 2 1/2x18 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
-          <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Tubo Galvanizado 2 1/2x18" class="w-full h-full object-cover">
-            </div>
-            <div>
-              <h4 class="font-bold text-sm text-white">Tubo Galvanizado 2 1/2x18</h4>
-              <p class="text-xs text-slate-400 mt-0.5">Tubo redondo galvanizado reforçado</p>
-            </div>
-          </div>
-          <button onclick="adicionarItem('Tubo galvanizado 2 1/2x18')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
-            + Adicionar ao Orçamento
-          </button>
-        </div>
-
-        <!-- PRODUTO 10: FERRO U PORTA DE ENROLAR -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
-          <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Ferro U porta de enrolar" class="w-full h-full object-cover">
-            </div>
-            <div>
-              <h4 class="font-bold text-sm text-white">Ferro U Porta de Enrolar Galvanizado</h4>
-              <p class="text-xs text-slate-400 mt-0.5">Guia lateral e perfil de elevação</p>
-            </div>
-          </div>
-          <button onclick="adicionarItem('Ferro U porta de enrolar galvanizado')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
-            + Adicionar ao Orçamento
-          </button>
-        </div>
-
-        <!-- PRODUTO 11: TUBO GALVANIZADO 3/4x16 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
-          <div class="flex items-center gap-3">
-            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0 border border-slate-700">
-              <img src="https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Tubo Galvanizado 3/4x16" class="w-full h-full object-cover">
-            </div>
-            <div>
-              <h4 class="font-bold text-sm text-white">Tubo Galvanizado 3/4x16</h4>
-              <p class="text-xs text-slate-400 mt-0.5">Tubo redondo leve anticorrosivo</p>
-            </div>
-          </div>
-          <button onclick="adicionarItem('Tubo galvanizado 3/4x16')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
-            + Adicionar ao Orçamento
-          </button>
-        </div>
-
-        <!-- CARD OUTROS PRODUTOS -->
-        <div class="bg-gradient-to-br from-slate-900 to-slate-900/90 border border-amber-500/30 rounded-2xl p-5 hover:border-amber-500 transition flex flex-col justify-between sm:col-span-2 relative overflow-hidden group">
-          <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-amber-500/5 rounded-full blur-2xl group-hover:bg-amber-500/10 transition"></div>
-          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div>
-              <h4 class="font-bold text-base text-white">Outros produtos / Medidas Especiais</h4>
-              <p class="text-xs text-slate-400 mt-1 leading-relaxed max-w-xl">
-                Não encontrou o item que procura acima? Adicione esta opção e especifique a bitola, quantidade ou produto nas observações ao lado.
-              </p>
-            </div>
-            <button onclick="adicionarItem('Outros produtos (especificado nas observações)')" class="w-full sm:w-auto whitespace-nowrap bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold px-5 py-3 rounded-xl text-xs transition border border-amber-500/20">
-              + Adicionar ao Orçamento
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- PAINEL DE ORÇAMENTO DA LOJA -->
-    <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5 sm:p-6 h-fit sticky top-20 shadow-2xl backdrop-blur-xl">
-      <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-800">
-        <h3 class="text-base sm:text-lg font-bold text-white flex items-center gap-2">
-          🛒 Seu Pedido de Cotação
-        </h3>
-        <span id="qtd-itens" class="bg-amber-500/10 text-amber-400 text-xs font-bold px-2.5 py-1 rounded-full border border-amber-500/20">0 itens</span>
-      </div>
-      
-      <!-- LISTA DINÂMICA -->
-      <div id="lista-itens" class="space-y-2 mb-6 max-h-56 overflow-y-auto pr-1">
-        <div class="text-center py-8 text-slate-500 border border-dashed border-slate-800 rounded-xl">
-          <p class="text-xs">Sua lista está vazia.</p>
-          <p class="text-[11px] mt-1 text-slate-600">Selecione itens no catálogo ao lado.</p>
-        </div>
-      </div>
-
-      <!-- FORMULÁRIO -->
-      <div class="space-y-4 pt-4 border-t border-slate-800">
-        <div>
-          <label class="text-xs font-semibold text-slate-300 block mb-1.5">Seu Nome / Nome da Empresa *</label>
-          <input id="nome" type="text" placeholder="Ex: Carlos Serralheria" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-amber-500 transition">
-        </div>
-
-        <div>
-          <label class="text-xs font-semibold text-slate-300 block mb-1.5">Especificações, Quantidade ou Outros Itens</label>
-          <textarea id="obs" placeholder="Ex: Preciso de 4 barras de metalon e também 2 latas de zarcão..." class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-amber-500 h-20 resize-none transition"></textarea>
-        </div>
-
-        <button onclick="enviarWhatsApp()" class="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition text-xs shadow-lg shadow-emerald-950">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-          Enviar Cotação pelo WhatsApp
-        </button>
-
-        <p class="text-[10px] text-center text-slate-500 leading-tight">
-          📍 Retirada no balcão da loja em Guaratiba ou a combinar entrega.
-        </p>
-      </div>
-    </div>
-  </main>
-
-  <!-- SEÇÃO DO GOOGLE MAPS -->
-  <section class="bg-slate-900/50 border-t border-slate-800 py-12 lg:py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-        <span class="bg-amber-500/10 text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-amber-500/20 uppercase">
-          Localização do Balcão
-        </span>
-        <h3 class="text-2xl sm:text-3xl font-black text-white mt-3">Venha Conhecer Nossa Loja</h3>
-        <p class="text-xs text-slate-400 mt-2">Estrada da Matriz, 1717 - Guaratiba, Rio de Janeiro - RJ, 23026-000</p>
-      </div>
-
-      <!-- MAPA EMBUTIDO -->
-      <div class="w-full h-80 sm:h-96 rounded-2xl overflow-hidden border border-slate-800 shadow-2xl relative">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.238476839352!2d-43.6068224!3d-22.9782503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c017bcbe60737%3A0x88d52aa29eecc87c!2sEstr.%20da%20Matriz%2C%201717%20-%20Guaratiba%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2023026-000!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
-          width="100%" 
-          height="100%" 
-          style="border:0; filter: grayscale(0.2) contrast(1.1);" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-slate-950 border-t border-slate-800/80 py-8 sm:py-10 text-slate-400 text-xs">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-wrap justify-between items-center gap-6">
-      <div>
-        <p class="font-extrabold text-white text-sm">PS FERRO E AÇO</p>
-        <p class="text-slate-500 mt-1">Distribuidor de soluções metálicas para todo o Rio de Janeiro.</p>
-      </div>
-      <div class="text-left sm:text-right">
-        <p class="text-slate-400">🕒 Segunda a Sexta: 08:00 às 17:00</p>
-        <p class="text-slate-500 mt-0.5">📍 Guaratiba, RJ</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- SCRIPT JS -->
-  <script>
-    let carrinho = [];
-
-    function adicionarItem(nome) {
-      carrinho.push(nome);
-      atualizarTela();
-    }
-
-    function atualizarTela() {
-      const container = document.getElementById('lista-itens');
-      const qtdSpan = document.getElementById('qtd-itens');
-      
-      qtdSpan.innerText = `${carrinho.length} itens`;
-
-      if (carrinho.length === 0) {
-        container.innerHTML = `
-          <div class="text-center py-8 text-slate-500 border border-dashed border-slate-800 rounded-xl">
-            <p class="text-xs">Sua lista está vazia.</p>
-            <p class="text-[11px] mt-1 text-slate-600">Selecione itens no catálogo ao lado.</p>
-          </div>`;
-        return;
-      }
-
-      container.innerHTML = carrinho.map((item, index) => 
-        `<div class="flex justify-between items-center bg-slate-950 border border-slate-800 p-2.5 rounded-xl text-xs">
-          <span class="text-slate-200 font-medium">• ${item}</span>
-          <button onclick="removerItem(${index})" class="text-rose-400 hover:text-rose-300 font-bold ml-2 p-1">✕</button>
-        </div>`
-      ).join('');
-    }
-
-    function removerItem(index) {
-      carrinho.splice(index, 1);
-      atualizarTela();
-    }
-
-    function enviarWhatsApp() {
-      const nome = document.getElementById('nome').value;
-      const obs = document.getElementById('obs').value;
-
-      if (!nome) return alert('Por favor, informe seu nome!');
-      if (carrinho.length === 0) return alert('Selecione ao menos um item no catálogo!');
-
-      let texto = `*SOLICITAÇÃO DE COTAÇÃO - PS FERRO E AÇO*\n\n`;
-      texto += `👤 *Cliente:* ${nome}\n`;
-      if (obs) texto += `📝 *Especificações/Medidas:* ${obs}\n`;
-      texto += `\n*ITENS SELECIONADOS:*\n`;
-      carrinho.forEach(item => texto += `• ${item}\n`);
-      texto += `\n📍 _Retirada no balcão em Guaratiba (ou consultar frete/entrega com a loja)._`;
+      texto += `\n📍 _Retirada no balcão em Guaratiba (ou consultar entrega)._`;
 
       const numeroZap = '5521973075890';
       window.open(`https://wa.me/${numeroZap}?text=${encodeURIComponent(texto)}`, '_blank');
