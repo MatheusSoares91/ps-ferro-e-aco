@@ -1,145 +1,254 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="dark scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PS Ferro e Aço - Orçamentos</title>
+  <title>PS Ferro e Aço - Distribuidor de Aço e Soluções Metálicas</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .bg-grid { background-image: radial-gradient(rgba(245, 158, 11, 0.12) 1px, transparent 1px); background-size: 24px 24px; }
+  </style>
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans min-h-screen">
+<body class="bg-slate-950 text-slate-100 min-h-screen antialiased selection:bg-amber-500 selection:text-slate-950">
+
+  <!-- TOP BAR / AVISO DE ATENDIMENTO -->
+  <div class="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-slate-950 font-bold text-xs py-2 px-4 text-center tracking-wide">
+    ⚡ ATENDIMENTO RÁPIDO & ORÇAMENTOS DIRETO NO BALCÃO EM GUARATIBA - RJ
+  </div>
 
   <!-- HEADER -->
-  <header class="bg-slate-800 border-b border-slate-700 sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center gap-4">
-      <div>
-        <h1 class="text-2xl font-black tracking-wider text-amber-500">PS FERRO E AÇO</h1>
-        <p class="text-xs text-slate-400">Distribuidor de Aço & Soluções Metálicas</p>
+  <header class="bg-slate-900/80 backdrop-blur-md border-b border-slate-800/80 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-wrap justify-between items-center gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-amber-500 rounded-xl flex items-center justify-center font-black text-slate-950 text-xl shadow-lg shadow-amber-500/20">
+          PS
+        </div>
+        <div>
+          <h1 class="text-xl font-extrabold tracking-tight text-white flex items-center gap-2">
+            PS FERRO E AÇO
+            <span class="text-[10px] bg-slate-800 text-amber-400 border border-amber-500/30 px-2 py-0.5 rounded-full uppercase font-bold">Oficial</span>
+          </h1>
+          <p class="text-xs text-slate-400">Distribuidor de Aço & Serralheria</p>
+        </div>
       </div>
-      <div class="flex items-center gap-4 text-sm">
-        <a href="tel:21973075890" class="flex items-center gap-2 bg-slate-700 hover:bg-slate-600 px-3 py-2 rounded-lg transition">
-          <span>📞 (21) 97307-5890</span>
+
+      <div class="flex items-center gap-3">
+        <a href="tel:21973075890" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-4 py-2 rounded-xl transition text-xs font-semibold">
+          <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+          <span class="hidden sm:inline">(21) 97307-5890</span>
         </a>
-        <a href="https://maps.google.com/?q=Estr.+da+Matriz,+1717+-+Guaratiba,+Rio+de+Janeiro+-+RJ" target="_blank" class="hidden sm:flex items-center gap-2 bg-slate-700 hover:bg-slate-600 px-3 py-2 rounded-lg transition">
-          <span>📍 Guaratiba - RJ</span>
+        <a href="#orcamento" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs transition shadow-lg shadow-amber-500/10">
+          Fazer Cotação
         </a>
       </div>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="bg-gradient-to-b from-slate-800 to-slate-900 py-10 border-b border-slate-800">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <span class="bg-amber-500/10 text-amber-400 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider border border-amber-500/20">
-        Atendimento Direto & Cotação Rápida
-      </span>
-      <h2 class="text-3xl md:text-5xl font-extrabold mt-4 text-white">
-        Monte seu Orçamento de Aço <span class="text-amber-500">Online</span>
+  <!-- HERO SECTION -->
+  <section class="relative bg-grid py-16 lg:py-24 border-b border-slate-800 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-slate-950/0 via-slate-950/80 to-slate-950"></div>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold px-4 py-1.5 rounded-full mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Atendimento Presencial e Online Ativo
+      </div>
+      <h2 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-none">
+        Sua Solução em <span class="bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 bg-clip-text text-transparent">Ferro e Aço</span> no Rio de Janeiro
       </h2>
-      <p class="mt-3 text-slate-400 max-w-2xl mx-auto text-sm">
-        Selecione as peças desejadas e receba o valor oficial diretamente no atendimento via WhatsApp.
+      <p class="mt-6 text-slate-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+        Qualidade garantida para serralheiros, construtores e obras. Monte sua lista de peças abaixo e receba seu orçamento pronto no WhatsApp.
       </p>
+
+      <!-- DESTAQUES RAPIDOS -->
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto mt-10 text-left">
+        <div class="bg-slate-900/60 border border-slate-800/80 backdrop-blur p-4 rounded-2xl flex items-center gap-3">
+          <div class="p-2.5 bg-amber-500/10 rounded-xl text-amber-400 font-bold">⭐ 5.0</div>
+          <div>
+            <p class="text-xs font-bold text-white">Excelente Qualidade</p>
+            <p class="text-[11px] text-slate-400">Materiais certificados</p>
+          </div>
+        </div>
+        <div class="bg-slate-900/60 border border-slate-800/80 backdrop-blur p-4 rounded-2xl flex items-center gap-3">
+          <div class="p-2.5 bg-amber-500/10 rounded-xl text-amber-400 font-bold">🏬</div>
+          <div>
+            <p class="text-xs font-bold text-white">Retirada no Balcão</p>
+            <p class="text-[11px] text-slate-400">Estr. da Matriz, Guaratiba</p>
+          </div>
+        </div>
+        <div class="bg-slate-900/60 border border-slate-800/80 backdrop-blur p-4 rounded-2xl col-span-2 md:col-span-1 flex items-center gap-3">
+          <div class="p-2.5 bg-amber-500/10 rounded-xl text-amber-400 font-bold">💬</div>
+          <div>
+            <p class="text-xs font-bold text-white">Orçamento Rápido</p>
+            <p class="text-[11px] text-slate-400">Resposta via WhatsApp</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- CONTEÚDO PRINCIPAL -->
-  <main class="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+  <!-- CATÁLOGO E CARRINHO -->
+  <main id="orcamento" class="max-w-7xl mx-auto px-4 sm:px-6 py-16 grid grid-cols-1 lg:grid-cols-3 gap-10">
     
-    <!-- CATÁLOGO -->
-    <div class="lg:col-span-2 space-y-4">
-      <h3 class="text-xl font-bold text-white">🧮 Catálogo de Produtos</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <!-- CATALOGO -->
+    <div class="lg:col-span-2 space-y-6">
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="text-2xl font-black text-white">Produtos & Materiais</h3>
+          <p class="text-xs text-slate-400">Clique em "+ Adicionar ao Orçamento" para montar seu pedido</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
         
-        <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden p-4 flex flex-col justify-between">
+        <!-- CARD PRODUTO 1 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 hover:border-amber-500/40 transition flex flex-col justify-between group">
           <div>
+            <div class="w-full h-36 bg-slate-800 rounded-xl mb-4 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" alt="Perfil U" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2 left-2 bg-slate-950/80 backdrop-blur text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded-lg border border-slate-800">Barra 6 Metros</span>
+            </div>
             <h4 class="font-bold text-lg text-white">Perfil U / Perfil Enrijecido</h4>
-            <p class="text-xs text-slate-400 mt-1">Ideal para estruturas metálicas, terças de galpão e portões.</p>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Estruturas metálicas, terças de galpão, portões e serralheria em geral.</p>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-700/50 flex justify-between items-center">
-            <span class="text-sm font-bold text-amber-400">Barra (6m)</span>
-            <button onclick="adicionarItem('Perfil U / Perfil Enrijecido')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-3 py-2 rounded-lg text-sm transition">+ Adicionar</button>
-          </div>
+          <button onclick="adicionarItem('Perfil U / Perfil Enrijecido')" class="mt-5 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2.5 rounded-xl text-xs transition border border-amber-500/20">
+            + Adicionar ao Orçamento
+          </button>
         </div>
 
-        <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden p-4 flex flex-col justify-between">
+        <!-- CARD PRODUTO 2 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 hover:border-amber-500/40 transition flex flex-col justify-between group">
           <div>
+            <div class="w-full h-36 bg-slate-800 rounded-xl mb-4 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=600&q=80" alt="Metalon" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2 left-2 bg-slate-950/80 backdrop-blur text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded-lg border border-slate-800">Diversos Formatos</span>
+            </div>
             <h4 class="font-bold text-lg text-white">Tubo Quadrado / Metalon</h4>
-            <p class="text-xs text-slate-400 mt-1">Diversas bitolas e espessuras para serralheria geral.</p>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Perfis tubulares de alta resistência para estruturas leves e pesadas.</p>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-700/50 flex justify-between items-center">
-            <span class="text-sm font-bold text-amber-400">Barra (6m)</span>
-            <button onclick="adicionarItem('Tubo Quadrado / Metalon')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-3 py-2 rounded-lg text-sm transition">+ Adicionar</button>
-          </div>
+          <button onclick="adicionarItem('Tubo Quadrado / Metalon')" class="mt-5 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2.5 rounded-xl text-xs transition border border-amber-500/20">
+            + Adicionar ao Orçamento
+          </button>
         </div>
 
-        <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden p-4 flex flex-col justify-between">
+        <!-- CARD PRODUTO 3 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 hover:border-amber-500/40 transition flex flex-col justify-between group">
           <div>
-            <h4 class="font-bold text-lg text-white">Chapa de Aço Fina / Grossa</h4>
-            <p class="text-xs text-slate-400 mt-1">Corte e dobra sob medida ou chapas inteiras.</p>
+            <div class="w-full h-36 bg-slate-800 rounded-xl mb-4 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Chapas de Aço" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2 left-2 bg-slate-950/80 backdrop-blur text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded-lg border border-slate-800">Corte & Dobra</span>
+            </div>
+            <h4 class="font-bold text-lg text-white">Chapas de Aço (Fina / Grossa)</h4>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Chapas de aço carbono lisas ou xadrez para pisos e fabricação industrial.</p>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-700/50 flex justify-between items-center">
-            <span class="text-sm font-bold text-amber-400">Unidade</span>
-            <button onclick="adicionarItem('Chapa de Aço Fina / Grossa')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-3 py-2 rounded-lg text-sm transition">+ Adicionar</button>
-          </div>
+          <button onclick="adicionarItem('Chapa de Aço')" class="mt-5 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2.5 rounded-xl text-xs transition border border-amber-500/20">
+            + Adicionar ao Orçamento
+          </button>
         </div>
 
-        <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden p-4 flex flex-col justify-between">
+        <!-- CARD PRODUTO 4 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 hover:border-amber-500/40 transition flex flex-col justify-between group">
           <div>
-            <h4 class="font-bold text-lg text-white">Viga I / Viga U / Viga H</h4>
-            <p class="text-xs text-slate-400 mt-1">Alta resistência para sustentação e grandes obras.</p>
+            <div class="w-full h-36 bg-slate-800 rounded-xl mb-4 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Vigas de Aço" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-2 left-2 bg-slate-950/80 backdrop-blur text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded-lg border border-slate-800">Alta Carga</span>
+            </div>
+            <h4 class="font-bold text-lg text-white">Vigas Estruturais (I, U, H)</h4>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Vigas de sustentação reforçadas para coberturas, mezaninos e edifícios.</p>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-700/50 flex justify-between items-center">
-            <span class="text-sm font-bold text-amber-400">Metro</span>
-            <button onclick="adicionarItem('Viga I / Viga U / Viga H')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-3 py-2 rounded-lg text-sm transition">+ Adicionar</button>
-          </div>
+          <button onclick="adicionarItem('Vigas Estruturais (I, U, H)')" class="mt-5 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2.5 rounded-xl text-xs transition border border-amber-500/20">
+            + Adicionar ao Orçamento
+          </button>
         </div>
 
       </div>
     </div>
 
-    <!-- FORMULÁRIO DE COTAÇÃO -->
-    <div class="bg-slate-800 border border-slate-700 rounded-xl p-6 h-fit sticky top-24">
-      <h3 class="text-xl font-bold text-white mb-4">🛒 Solicitar Cotação</h3>
+    <!-- PAINEL DE ORÇAMENTO DA LOJA -->
+    <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 h-fit sticky top-24 shadow-2xl backdrop-blur-xl">
+      <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-800">
+        <h3 class="text-lg font-bold text-white flex items-center gap-2">
+          🛒 Seu Pedido de Cotação
+        </h3>
+        <span id="qtd-itens" class="bg-amber-500/10 text-amber-400 text-xs font-bold px-2.5 py-1 rounded-full border border-amber-500/20">0 itens</span>
+      </div>
       
-      <div id="lista-itens" class="space-y-2 mb-4 text-sm text-slate-300">
-        <p class="text-slate-500 text-xs italic">Nenhum item selecionado ainda.</p>
+      <!-- LISTA DINÂMICA -->
+      <div id="lista-itens" class="space-y-2 mb-6 max-h-56 overflow-y-auto pr-1">
+        <div class="text-center py-8 text-slate-500 border border-dashed border-slate-800 rounded-xl">
+          <p class="text-xs">Sua lista está vazia.</p>
+          <p class="text-[11px] mt-1 text-slate-600">Selecione itens no catálogo ao lado.</p>
+        </div>
       </div>
 
-      <div class="space-y-3 pt-2 border-t border-slate-700">
+      <!-- FORMULÁRIO -->
+      <div class="space-y-4 pt-4 border-t border-slate-800">
         <div>
-          <label class="text-xs text-slate-400 block mb-1">Seu Nome / Empresa *</label>
-          <input id="nome" type="text" placeholder="Ex: João Serralheria" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
-        </div>
-        <div>
-          <label class="text-xs text-slate-400 block mb-1">Seu Bairro / Cidade</label>
-          <input id="bairro" type="text" placeholder="Ex: Guaratiba, Campo Grande..." class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
-        </div>
-        <div>
-          <label class="text-xs text-slate-400 block mb-1">Como prefere receber?</label>
-          <select id="opcao" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
-            <option value="Consultar se entregam na minha região">Consultar se entregam na minha região</option>
-            <option value="Vou retirar no balcão da loja">Vou retirar no balcão da loja</option>
-          </select>
-        </div>
-        <div>
-          <label class="text-xs text-slate-400 block mb-1">Medidas ou detalhes</label>
-          <textarea id="obs" placeholder="Ex: Preciso de cortes específicos..." class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-amber-500 h-16 resize-none"></textarea>
+          <label class="text-xs font-semibold text-slate-300 block mb-1.5">Seu Nome / Nome da Empresa *</label>
+          <input id="nome" type="text" placeholder="Ex: Carlos Serralheria" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-amber-500 transition">
         </div>
 
-        <button onclick="enviarWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition shadow-lg">
-          💬 Enviar Cotação para o WhatsApp
+        <div>
+          <label class="text-xs font-semibold text-slate-300 block mb-1.5">Especificações ou Medidas das Peças</label>
+          <textarea id="obs" placeholder="Ex: Preciso de 4 barras de perfil U com corte de 2 metros..." class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-amber-500 h-20 resize-none transition"></textarea>
+        </div>
+
+        <button onclick="enviarWhatsApp()" class="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition text-xs shadow-lg shadow-emerald-950">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          Enviar Cotação pelo WhatsApp
         </button>
+
+        <p class="text-[10px] text-center text-slate-500 leading-tight">
+          📍 Retirada no balcão da loja após a confirmação das peças.
+        </p>
       </div>
     </div>
   </main>
 
+  <!-- SEÇÃO DO GOOGLE MAPS -->
+  <section class="bg-slate-900/50 border-t border-slate-800 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="bg-amber-500/10 text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-amber-500/20 uppercase">
+          Localização do Balcão
+        </span>
+        <h3 class="text-2xl sm:text-3xl font-black text-white mt-3">Venha Conhecer Nossa Loja</h3>
+        <p class="text-xs text-slate-400 mt-2">Estrada da Matriz, 1717 - Guaratiba, Rio de Janeiro - RJ, 23026-000</p>
+      </div>
+
+      <!-- MAPA EMBUTIDO -->
+      <div class="w-full h-96 rounded-2xl overflow-hidden border border-slate-800 shadow-2xl relative">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.238476839352!2d-43.6068224!3d-22.9782503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c017bcbe60737%3A0x88d52aa29eecc87c!2sEstr.%20da%20Matriz%2C%201717%20-%20Guaratiba%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2023026-000!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+          width="100%" 
+          height="100%" 
+          style="border:0; filter: grayscale(0.2) contrast(1.1);" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
   <!-- FOOTER -->
-  <footer class="bg-slate-950 border-t border-slate-800 py-8 mt-12 text-slate-400 text-sm">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h4 class="font-bold text-white mb-1">PS FERRO E AÇO</h4>
-      <p class="text-xs">Estr. da Matriz, 1717 - Guaratiba, Rio de Janeiro - RJ, 23026-000</p>
+  <footer class="bg-slate-950 border-t border-slate-800/80 py-10 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-wrap justify-between items-center gap-6">
+      <div>
+        <p class="font-extrabold text-white text-sm">PS FERRO E AÇO</p>
+        <p class="text-slate-500 mt-1">Distribuidor de soluções metálicas para todo o Rio de Janeiro.</p>
+      </div>
+      <div class="text-right">
+        <p class="text-slate-400">🕒 Segunda a Sexta: 08:00 às 17:00</p>
+        <p class="text-slate-500 mt-0.5">📍 Guaratiba, RJ</p>
+      </div>
     </div>
   </footer>
 
+  <!-- SCRIPT JS -->
   <script>
     let carrinho = [];
 
@@ -150,14 +259,23 @@
 
     function atualizarTela() {
       const container = document.getElementById('lista-itens');
+      const qtdSpan = document.getElementById('qtd-itens');
+      
+      qtdSpan.innerText = `${carrinho.length} itens`;
+
       if (carrinho.length === 0) {
-        container.innerHTML = '<p class="text-slate-500 text-xs italic">Nenhum item selecionado ainda.</p>';
+        container.innerHTML = `
+          <div class="text-center py-8 text-slate-500 border border-dashed border-slate-800 rounded-xl">
+            <p class="text-xs">Sua lista está vazia.</p>
+            <p class="text-[11px] mt-1 text-slate-600">Selecione itens no catálogo ao lado.</p>
+          </div>`;
         return;
       }
+
       container.innerHTML = carrinho.map((item, index) => 
-        `<div class="flex justify-between items-center bg-slate-900 p-2 rounded text-xs">
-          <span>• ${item}</span>
-          <button onclick="removerItem(${index})" class="text-red-400 hover:text-red-300 font-bold ml-2">X</button>
+        `<div class="flex justify-between items-center bg-slate-950 border border-slate-800 p-2.5 rounded-xl text-xs">
+          <span class="text-slate-200 font-medium">• ${item}</span>
+          <button onclick="removerItem(${index})" class="text-rose-400 hover:text-rose-300 font-bold ml-2 p-1">✕</button>
         </div>`
       ).join('');
     }
@@ -169,21 +287,17 @@
 
     function enviarWhatsApp() {
       const nome = document.getElementById('nome').value;
-      const bairro = document.getElementById('bairro').value;
-      const opcao = document.getElementById('opcao').value;
       const obs = document.getElementById('obs').value;
 
-      if (!nome) return alert('Por favor, digite seu nome!');
-      if (carrinho.length === 0) return alert('Selecione pelo menos um produto!');
+      if (!nome) return alert('Por favor, informe seu nome!');
+      if (carrinho.length === 0) return alert('Selecione ao menos um item no catálogo!');
 
-      let texto = `*SOLICITAÇÃO DE ORÇAMENTO - PS FERRO E AÇO*\n\n`;
+      let texto = `*SOLICITAÇÃO DE COTAÇÃO - PS FERRO E AÇO*\n\n`;
       texto += `👤 *Cliente:* ${nome}\n`;
-      texto += `📍 *Bairro/Região:* ${bairro || 'Não informado'}\n`;
-      texto += `🚚 *Preferencia:* ${opcao}\n`;
-      if (obs) texto += `📝 *Obs/Medidas:* ${obs}\n`;
-      texto += `\n*ITENS SOLICITADOS:*\n`;
+      if (obs) texto += `📝 *Especificações/Medidas:* ${obs}\n`;
+      texto += `\n*ITENS SELECIONADOS:*\n`;
       carrinho.forEach(item => texto += `• ${item}\n`);
-      texto += `\n_Aguardando cotação de valores._`;
+      texto += `\n📍 _Cliente ciente da retirada no balcão da loja em Guaratiba._`;
 
       const numeroZap = '5521973075890';
       window.open(`https://wa.me/${numeroZap}?text=${encodeURIComponent(texto)}`, '_blank');
