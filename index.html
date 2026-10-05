@@ -164,18 +164,18 @@
           </button>
         </div>
 
-        <!-- CARD OUTROS PRODUTOS -->
+        <!-- CARD OUTROS PRODUTOS (UNIFICADO AO CARRINHO) -->
         <div class="bg-gradient-to-br from-slate-900 to-slate-900/90 border border-amber-500/30 rounded-2xl p-5 hover:border-amber-500 transition flex flex-col justify-between sm:col-span-2 relative overflow-hidden group">
           <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-amber-500/5 rounded-full blur-2xl group-hover:bg-amber-500/10 transition"></div>
           <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div>
               <h4 class="font-bold text-lg text-white">Outros produtos</h4>
               <p class="text-xs text-slate-400 mt-1 leading-relaxed max-w-xl">
-                Não encontrou o item que procura? Entre em contato direto com a nossa equipe no WhatsApp
+                Não encontrou o item que procura? Adicione esta opção e especifique o que precisa nas observações ao lado.
               </p>
             </div>
-            <button onclick="contatoDiretoWhatsApp()" class="w-full sm:w-auto whitespace-nowrap bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-3 rounded-xl text-xs transition shadow-lg shadow-amber-500/10 flex items-center justify-center gap-2">
-              💬 Falar no WhatsApp
+            <button onclick="adicionarItem('Outros produtos (especificado nas observações)')" class="w-full sm:w-auto whitespace-nowrap bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold px-5 py-3 rounded-xl text-xs transition border border-amber-500/20">
+              + Adicionar ao Orçamento
             </button>
           </div>
         </div>
@@ -209,7 +209,7 @@
 
         <div>
           <label class="text-xs font-semibold text-slate-300 block mb-1.5">Especificações ou Medidas das Peças</label>
-          <textarea id="obs" placeholder="Ex: Preciso de 4 barras de perfil U com corte de 2 metros..." class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-amber-500 h-20 resize-none transition"></textarea>
+          <textarea id="obs" placeholder="Ex: Preciso de 4 barras de perfil U e também chapa galvanizada..." class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-amber-500 h-20 resize-none transition"></textarea>
         </div>
 
         <button onclick="enviarWhatsApp()" class="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition text-xs shadow-lg shadow-emerald-950">
@@ -315,12 +315,6 @@
       carrinho.forEach(item => texto += `• ${item}\n`);
       texto += `\n📍 _Cliente ciente da retirada no balcão da loja em Guaratiba._`;
 
-      const numeroZap = '5521973075890';
-      window.open(`https://wa.me/${numeroZap}?text=${encodeURIComponent(texto)}`, '_blank');
-    }
-
-    function contatoDiretoWhatsApp() {
-      const texto = `*CONSULTA - PS FERRO E AÇO*\n\nOlá! Vim pelo site e gostaria de saber sobre outros produtos.`;
       const numeroZap = '5521973075890';
       window.open(`https://wa.me/${numeroZap}?text=${encodeURIComponent(texto)}`, '_blank');
     }
