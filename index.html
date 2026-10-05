@@ -49,41 +49,41 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section class="relative bg-grid py-16 lg:py-24 border-b border-slate-800 overflow-hidden">
+  <section class="relative bg-grid py-12 lg:py-20 border-b border-slate-800 overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-b from-slate-950/0 via-slate-950/80 to-slate-950"></div>
     <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10">
       <div class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold px-4 py-1.5 rounded-full mb-6">
         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
         Atendimento Presencial e Online Ativo
       </div>
-      <h2 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-none">
+      <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-none">
         Sua Solução em <span class="bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 bg-clip-text text-transparent">Ferro e Aço</span> no Rio de Janeiro
       </h2>
-      <p class="mt-6 text-slate-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-        Qualidade garantida para serralheiros, construtores e obras. Monte sua lista de peças abaixo e receba seu orçamento pronto no WhatsApp.
+      <p class="mt-5 text-slate-400 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+        Monte seu orçamento escolhendo os produtos do nosso catálogo abaixo e receba a cotação pronta no WhatsApp.
       </p>
 
       <!-- DESTAQUES RAPIDOS -->
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto mt-10 text-left">
-        <div class="bg-slate-900/60 border border-slate-800/80 backdrop-blur p-4 rounded-2xl flex items-center gap-3">
-          <div class="p-2.5 bg-amber-500/10 rounded-xl text-amber-400 font-bold">⭐ 5.0</div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 max-w-3xl mx-auto mt-8 text-left">
+        <div class="bg-slate-900/60 border border-slate-800/80 backdrop-blur p-3.5 sm:p-4 rounded-2xl flex items-center gap-3">
+          <div class="p-2 sm:p-2.5 bg-amber-500/10 rounded-xl text-amber-400 font-bold text-sm">⭐ 5.0</div>
           <div>
             <p class="text-xs font-bold text-white">Excelente Qualidade</p>
-            <p class="text-[11px] text-slate-400">Materiais certificados</p>
+            <p class="text-[10px] sm:text-[11px] text-slate-400">Materiais certificados</p>
           </div>
         </div>
-        <div class="bg-slate-900/60 border border-slate-800/80 backdrop-blur p-4 rounded-2xl flex items-center gap-3">
-          <div class="p-2.5 bg-amber-500/10 rounded-xl text-amber-400 font-bold">🏬</div>
+        <div class="bg-slate-900/60 border border-slate-800/80 backdrop-blur p-3.5 sm:p-4 rounded-2xl flex items-center gap-3">
+          <div class="p-2 sm:p-2.5 bg-amber-500/10 rounded-xl text-amber-400 font-bold text-sm">🏬</div>
           <div>
             <p class="text-xs font-bold text-white">Retirada no Balcão</p>
-            <p class="text-[11px] text-slate-400">Estr. da Matriz, Guaratiba</p>
+            <p class="text-[10px] sm:text-[11px] text-slate-400">Estr. da Matriz, Guaratiba</p>
           </div>
         </div>
-        <div class="bg-slate-900/60 border border-slate-800/80 backdrop-blur p-4 rounded-2xl col-span-2 md:col-span-1 flex items-center gap-3">
-          <div class="p-2.5 bg-amber-500/10 rounded-xl text-amber-400 font-bold">💬</div>
+        <div class="bg-slate-900/60 border border-slate-800/80 backdrop-blur p-3.5 sm:p-4 rounded-2xl col-span-2 md:col-span-1 flex items-center gap-3">
+          <div class="p-2 sm:p-2.5 bg-amber-500/10 rounded-xl text-amber-400 font-bold text-sm">💬</div>
           <div>
             <p class="text-xs font-bold text-white">Orçamento Rápido</p>
-            <p class="text-[11px] text-slate-400">Resposta via WhatsApp</p>
+            <p class="text-[10px] sm:text-[11px] text-slate-400">Resposta via WhatsApp</p>
           </div>
         </div>
       </div>
@@ -91,87 +91,204 @@
   </section>
 
   <!-- CATÁLOGO E CARRINHO -->
-  <main id="orcamento" class="max-w-7xl mx-auto px-4 sm:px-6 py-16 grid grid-cols-1 lg:grid-cols-3 gap-10">
+  <main id="orcamento" class="max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:py-16 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
     
     <!-- CATALOGO -->
     <div class="lg:col-span-2 space-y-6">
       <div class="flex items-center justify-between">
         <div>
-          <h3 class="text-2xl font-black text-white">Produtos & Materiais</h3>
-          <p class="text-xs text-slate-400">Clique em "+ Adicionar ao Orçamento" para montar seu pedido</p>
+          <h3 class="text-xl sm:text-2xl font-black text-white">Nosso Catálogo</h3>
+          <p class="text-xs text-slate-400">Clique em "+ Adicionar" nos itens que você precisa</p>
         </div>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <!-- GRID DE PRODUTOS -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         
-        <!-- CARD PRODUTO 1 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 hover:border-amber-500/40 transition flex flex-col justify-between group">
-          <div>
-            <div class="w-full h-36 bg-slate-800 rounded-xl mb-4 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" alt="Perfil U" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-              <span class="absolute top-2 left-2 bg-slate-950/80 backdrop-blur text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded-lg border border-slate-800">Barra 6 Metros</span>
+        <!-- PRODUTO 1 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+          <div class="flex items-center gap-3">
+            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=200&q=80" alt="Thinner" class="w-full h-full object-cover">
             </div>
-            <h4 class="font-bold text-lg text-white">Perfil U / Perfil Enrijecido</h4>
-            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Estruturas metálicas, terças de galpão, portões e serralheria em geral.</p>
+            <div>
+              <h4 class="font-bold text-sm text-white">Thinner</h4>
+              <p class="text-xs text-slate-400 mt-0.5">Solvente para limpeza e diluição</p>
+            </div>
           </div>
-          <button onclick="adicionarItem('Perfil U / Perfil Enrijecido')" class="mt-5 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2.5 rounded-xl text-xs transition border border-amber-500/20">
+          <button onclick="adicionarItem('Thinner')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
             + Adicionar ao Orçamento
           </button>
         </div>
 
-        <!-- CARD PRODUTO 2 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 hover:border-amber-500/40 transition flex flex-col justify-between group">
-          <div>
-            <div class="w-full h-36 bg-slate-800 rounded-xl mb-4 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=600&q=80" alt="Metalon" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-              <span class="absolute top-2 left-2 bg-slate-950/80 backdrop-blur text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded-lg border border-slate-800">Diversos Formatos</span>
+        <!-- PRODUTO 2 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+          <div class="flex items-center gap-3">
+            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0">
+              <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=200&q=80" alt="Redondo maciço" class="w-full h-full object-cover">
             </div>
-            <h4 class="font-bold text-lg text-white">Tubo Quadrado / Metalon</h4>
-            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Perfis tubulares de alta resistência para estruturas leves e pesadas.</p>
+            <div>
+              <h4 class="font-bold text-sm text-white">Redondo Maciço</h4>
+              <p class="text-xs text-amber-400 font-semibold mt-0.5">Medidas: 1/4 | 5/16 | 3/8 | 1/2</p>
+            </div>
           </div>
-          <button onclick="adicionarItem('Tubo Quadrado / Metalon')" class="mt-5 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2.5 rounded-xl text-xs transition border border-amber-500/20">
+          <button onclick="adicionarItem('Redondo Maciço (1/4 | 5/16 | 3/8 | 1/2)')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
             + Adicionar ao Orçamento
           </button>
         </div>
 
-        <!-- CARD PRODUTO 3 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 hover:border-amber-500/40 transition flex flex-col justify-between group">
-          <div>
-            <div class="w-full h-36 bg-slate-800 rounded-xl mb-4 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Chapas de Aço" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-              <span class="absolute top-2 left-2 bg-slate-950/80 backdrop-blur text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded-lg border border-slate-800">Corte & Dobra</span>
+        <!-- PRODUTO 3 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+          <div class="flex items-center gap-3">
+            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=200&q=80" alt="Cantoneiras" class="w-full h-full object-cover">
             </div>
-            <h4 class="font-bold text-lg text-white">Chapas de Aço (Fina / Grossa)</h4>
-            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Chapas de aço carbono lisas ou xadrez para pisos e fabricação industrial.</p>
+            <div>
+              <h4 class="font-bold text-sm text-white">Cantoneiras</h4>
+              <p class="text-xs text-amber-400 font-semibold mt-0.5">Medidas: 1/2 até 2"</p>
+            </div>
           </div>
-          <button onclick="adicionarItem('Chapa de Aço')" class="mt-5 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2.5 rounded-xl text-xs transition border border-amber-500/20">
+          <button onclick="adicionarItem('Cantoneiras (1/2 até 2&quot;)')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
             + Adicionar ao Orçamento
           </button>
         </div>
 
-        <!-- CARD PRODUTO 4 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 hover:border-amber-500/40 transition flex flex-col justify-between group">
-          <div>
-            <div class="w-full h-36 bg-slate-800 rounded-xl mb-4 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Vigas de Aço" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-              <span class="absolute top-2 left-2 bg-slate-950/80 backdrop-blur text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded-lg border border-slate-800">Alta Carga</span>
+        <!-- PRODUTO 4 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+          <div class="flex items-center gap-3">
+            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=200&q=80" alt="Zarcão" class="w-full h-full object-cover">
             </div>
-            <h4 class="font-bold text-lg text-white">Vigas Estruturais (I, U, H)</h4>
-            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Vigas de sustentação reforçadas para coberturas, mezaninos e edifícios.</p>
+            <div>
+              <h4 class="font-bold text-sm text-white">Zarcão</h4>
+              <p class="text-xs text-amber-400 font-semibold mt-0.5">Disponível em 1/4 e 3,6L</p>
+            </div>
           </div>
-          <button onclick="adicionarItem('Vigas Estruturais (I, U, H)')" class="mt-5 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2.5 rounded-xl text-xs transition border border-amber-500/20">
+          <button onclick="adicionarItem('Zarcão (1/4 ou 3,6L)')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
             + Adicionar ao Orçamento
           </button>
         </div>
 
-        <!-- CARD OUTROS PRODUTOS (UNIFICADO AO CARRINHO) -->
+        <!-- PRODUTO 5 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+          <div class="flex items-center gap-3">
+            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0">
+              <img src="https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=200&q=80" alt="Metalon Galvanizado 20x20x20" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-white">Metalon Galvanizado 20x20x20</h4>
+              <p class="text-xs text-slate-400 mt-0.5">Perfil tubular com proteção anticorrosiva</p>
+            </div>
+          </div>
+          <button onclick="adicionarItem('Metalon galvanizado 20x20x20')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
+            + Adicionar ao Orçamento
+          </button>
+        </div>
+
+        <!-- PRODUTO 6 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+          <div class="flex items-center gap-3">
+            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0">
+              <img src="https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=200&q=80" alt="Metalon Preto 50x30x18" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-white">Metalon Preto 50x30x18</h4>
+              <p class="text-xs text-slate-400 mt-0.5">Estrutura de aço carbono para serralheria</p>
+            </div>
+          </div>
+          <button onclick="adicionarItem('Metalon preto 50x30x18')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
+            + Adicionar ao Orçamento
+          </button>
+        </div>
+
+        <!-- PRODUTO 7 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+          <div class="flex items-center gap-3">
+            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0">
+              <img src="https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=200&q=80" alt="Metalon Galvanizado 30x20x18" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-white">Metalon Galvanizado 30x20x18</h4>
+              <p class="text-xs text-slate-400 mt-0.5">Tubo retangular galvanizado resistente</p>
+            </div>
+          </div>
+          <button onclick="adicionarItem('Metalon galvanizado 30x20x18')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
+            + Adicionar ao Orçamento
+          </button>
+        </div>
+
+        <!-- PRODUTO 8 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+          <div class="flex items-center gap-3">
+            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0">
+              <img src="https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=200&q=80" alt="Metalon Galvanizado 50x30x18" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-white">Metalon Galvanizado 50x30x18</h4>
+              <p class="text-xs text-slate-400 mt-0.5">Tubo reforçado para portões e estruturas</p>
+            </div>
+          </div>
+          <button onclick="adicionarItem('Metalon galvanizado 50x30x18')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
+            + Adicionar ao Orçamento
+          </button>
+        </div>
+
+        <!-- PRODUTO 9 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+          <div class="flex items-center gap-3">
+            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0">
+              <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=200&q=80" alt="Tubo Galvanizado 2 1/2x18" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-white">Tubo Galvanizado 2 1/2x18</h4>
+              <p class="text-xs text-slate-400 mt-0.5">Tubo redondo galvanizado reforçado</p>
+            </div>
+          </div>
+          <button onclick="adicionarItem('Tubo galvanizado 2 1/2x18')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
+            + Adicionar ao Orçamento
+          </button>
+        </div>
+
+        <!-- PRODUTO 10 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+          <div class="flex items-center gap-3">
+            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0">
+              <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=200&q=80" alt="Ferro U porta de enrolar" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-white">Ferro U Porta de Enrolar Galvanizado</h4>
+              <p class="text-xs text-slate-400 mt-0.5">Guia lateral e perfil de elevação</p>
+            </div>
+          </div>
+          <button onclick="adicionarItem('Ferro U porta de enrolar galvanizado')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
+            + Adicionar ao Orçamento
+          </button>
+        </div>
+
+        <!-- PRODUTO 11 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 hover:border-amber-500/40 transition flex flex-col justify-between group">
+          <div class="flex items-center gap-3">
+            <div class="w-16 h-16 bg-slate-800 rounded-xl overflow-hidden shrink-0">
+              <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=200&q=80" alt="Tubo Galvanizado 3/4x16" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-white">Tubo Galvanizado 3/4x16</h4>
+              <p class="text-xs text-slate-400 mt-0.5">Tubo redondo leve anticorrosivo</p>
+            </div>
+          </div>
+          <button onclick="adicionarItem('Tubo galvanizado 3/4x16')" class="mt-4 w-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold py-2 rounded-xl text-xs transition border border-amber-500/20">
+            + Adicionar ao Orçamento
+          </button>
+        </div>
+
+        <!-- CARD OUTROS PRODUTOS -->
         <div class="bg-gradient-to-br from-slate-900 to-slate-900/90 border border-amber-500/30 rounded-2xl p-5 hover:border-amber-500 transition flex flex-col justify-between sm:col-span-2 relative overflow-hidden group">
           <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-amber-500/5 rounded-full blur-2xl group-hover:bg-amber-500/10 transition"></div>
           <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div>
-              <h4 class="font-bold text-lg text-white">Outros produtos</h4>
+              <h4 class="font-bold text-base text-white">Outros produtos / Medidas Especiais</h4>
               <p class="text-xs text-slate-400 mt-1 leading-relaxed max-w-xl">
-                Não encontrou o item que procura? Adicione esta opção e especifique o que precisa nas observações ao lado.
+                Não encontrou o item que procura acima? Adicione esta opção e especifique a bitola, quantidade ou produto nas observações ao lado.
               </p>
             </div>
             <button onclick="adicionarItem('Outros produtos (especificado nas observações)')" class="w-full sm:w-auto whitespace-nowrap bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-amber-400 font-bold px-5 py-3 rounded-xl text-xs transition border border-amber-500/20">
@@ -184,9 +301,9 @@
     </div>
 
     <!-- PAINEL DE ORÇAMENTO DA LOJA -->
-    <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 h-fit sticky top-24 shadow-2xl backdrop-blur-xl">
+    <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5 sm:p-6 h-fit sticky top-20 shadow-2xl backdrop-blur-xl">
       <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-800">
-        <h3 class="text-lg font-bold text-white flex items-center gap-2">
+        <h3 class="text-base sm:text-lg font-bold text-white flex items-center gap-2">
           🛒 Seu Pedido de Cotação
         </h3>
         <span id="qtd-itens" class="bg-amber-500/10 text-amber-400 text-xs font-bold px-2.5 py-1 rounded-full border border-amber-500/20">0 itens</span>
@@ -208,8 +325,8 @@
         </div>
 
         <div>
-          <label class="text-xs font-semibold text-slate-300 block mb-1.5">Especificações ou Medidas das Peças</label>
-          <textarea id="obs" placeholder="Ex: Preciso de 4 barras de perfil U e também chapa galvanizada..." class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-amber-500 h-20 resize-none transition"></textarea>
+          <label class="text-xs font-semibold text-slate-300 block mb-1.5">Especificações, Quantidade ou Outros Itens</label>
+          <textarea id="obs" placeholder="Ex: Preciso de 4 barras de metalon e também 2 latas de zarcão..." class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-amber-500 h-20 resize-none transition"></textarea>
         </div>
 
         <button onclick="enviarWhatsApp()" class="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition text-xs shadow-lg shadow-emerald-950">
@@ -225,9 +342,9 @@
   </main>
 
   <!-- SEÇÃO DO GOOGLE MAPS -->
-  <section class="bg-slate-900/50 border-t border-slate-800 py-16">
+  <section class="bg-slate-900/50 border-t border-slate-800 py-12 lg:py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="text-center max-w-2xl mx-auto mb-10">
+      <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
         <span class="bg-amber-500/10 text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-amber-500/20 uppercase">
           Localização do Balcão
         </span>
@@ -236,7 +353,7 @@
       </div>
 
       <!-- MAPA EMBUTIDO -->
-      <div class="w-full h-96 rounded-2xl overflow-hidden border border-slate-800 shadow-2xl relative">
+      <div class="w-full h-80 sm:h-96 rounded-2xl overflow-hidden border border-slate-800 shadow-2xl relative">
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.238476839352!2d-43.6068224!3d-22.9782503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c017bcbe60737%3A0x88d52aa29eecc87c!2sEstr.%20da%20Matriz%2C%201717%20-%20Guaratiba%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2023026-000!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
           width="100%" 
@@ -251,13 +368,13 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-slate-950 border-t border-slate-800/80 py-10 text-slate-400 text-xs">
+  <footer class="bg-slate-950 border-t border-slate-800/80 py-8 sm:py-10 text-slate-400 text-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-wrap justify-between items-center gap-6">
       <div>
         <p class="font-extrabold text-white text-sm">PS FERRO E AÇO</p>
         <p class="text-slate-500 mt-1">Distribuidor de soluções metálicas para todo o Rio de Janeiro.</p>
       </div>
-      <div class="text-right">
+      <div class="text-left sm:text-right">
         <p class="text-slate-400">🕒 Segunda a Sexta: 08:00 às 17:00</p>
         <p class="text-slate-500 mt-0.5">📍 Guaratiba, RJ</p>
       </div>
